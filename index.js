@@ -121,7 +121,7 @@ function getitemsPrice() {
 
 function saveJson(data, name, param) {
     console.log(param);
-    //request({ url: 'https://api.myjson.com/bins/3d1jx', method: 'PUT', json: { item: name, time: moment().format('MMMM Do YYYY, h:mm:ss a'), price: param.total * 0.01 + 'e', tobuy: data, param: param } }, function () { })
+    request({ url: 'https://api.myjson.com/bins/3d1jx', method: 'PUT', json: { item: name, time: moment().format('MMMM Do YYYY, h:mm:ss a'), price: param.total * 0.01 + 'e', tobuy: data, param: param } }, function () { })
 }
 
 function saveStatus(param) {
