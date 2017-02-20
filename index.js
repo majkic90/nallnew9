@@ -40,7 +40,7 @@ var getNames = [];
 var ifERROR = false;
 var refreshTime = 6000;
 var knifes = [];
-var startTime = 0;
+var startTime = 1;
 
 io.on('connection', function (socket) {
     socket.send("connect");
