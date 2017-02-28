@@ -20,15 +20,6 @@ app.get('/', function (req, res) {
 
 var euro = 1;
 
-request({
-    url: "https://api.myjson.com/bins/119upp",
-    json: true
-}, function (error, response, body) {
-    if (!error) {
-        euro = body.euro;
-    }
-});
-
 app.set('view engine', 'ejs');
 
 var searchString = "lore%2Bgamma%2Bcrimson%2Bhowl%2Bmedusa%2Bautotronic%2Btiger%2Bserpent%2Bmarble_fade&category_730_Exterior%5B%5D=tag_WearCategory0&category_730_Exterior%5B%5D=tag_WearCategory1&category_730_Exterior%5B%5D=tag_WearCategory2&category_730_Weapon%5B%5D=tag_weapon_ak47&category_730_Weapon%5B%5D=tag_weapon_awp&category_730_Weapon%5B%5D=tag_weapon_m4a1&category_730_Weapon%5B%5D=tag_weapon_bayonet&category_730_Weapon%5B%5D=tag_weapon_knife_karambit&category_730_Weapon%5B%5D=tag_weapon_knife_m9_bayonet";
